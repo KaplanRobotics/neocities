@@ -3,7 +3,8 @@
    "how to change link color." */
 
 :root {
-  --border-color: yellow; 
+  --border-color: rgb(0, 126, 10);
+  --dark-border-color: rgb(7, 43, 0);
 }
 
 
@@ -11,8 +12,22 @@ body {
   background-image:url(backgrounds/spring/springbackground2x.gif);
 }
 
+
+a:link {
+  color: var(--dark-border-color)
+}
+
+a:hover {
+  color:rgb(105, 233, 0)
+}
+
+a:visited {
+  color:rgb(163, 161, 11)
+}
+
 .banner {
-  border-bottom-color: var(--border-color); 
+  background-color:rgb(176, 224, 148);
+  border-bottom-color: var(--dark-border-color); 
 }
 
 .content-box {
