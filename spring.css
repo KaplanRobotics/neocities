@@ -1,0 +1,24 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+:root {
+  --border-color: yellow; 
+}
+
+
+body {
+  background-image:url(backgrounds/spring/springbackground2x.gif);
+}
+
+.banner {
+  border-bottom-color: var(--border-color); 
+}
+
+.content-box {
+  border-color: var(--border-color); 
+}
+
+.springButton {
+ font-weight:bolder;
+}

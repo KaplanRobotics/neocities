@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <title>Renata's Site</title>
+    
+    <link id="season" href="/spring.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body onload="initialize()">
+    <script type="text/javascript" src="cookieUtil.js"></script>
+    <script> 
+      function initialize() {
+        // setCookieValue("season", "spring");
+        // alert("worked?")
+        // if(getCookie("season") == "") {
+        //   setCookieValue("season", "basic"); 
+        // }
+      }
+    </script>
+    <script>
+      function randomSeason() {
+      var random_id = Math.floor((Math.random()*4));
+      if(random_id == 0) {
+       document.getElementById('season').href='/spring.css'; 
+      } else if(random_id == 1) {
+       document.getElementById('season').href='/winter.css'; 
+      } else if(random_id == 2) {
+       document.getElementById('season').href='/summer.css'; 
+      } else if(random_id == 3) {
+       document.getElementById('season').href='/fall.css'; 
+      }
+    }
+    </script>
+    <script>
+      function cycleSeason() {
+       if(getCookie("season") == "") {
+         setCookieValue("season", "basic");
+       } else if(getCookie("season") == "basic") {
+        setCookieValue("season", "spring"); 
+       } else if(getCookie("season") == "fall") {
+        setCookieValue("season", "winter"); 
+       } else if(getCookie("season") == "winter") {
+        setCookieValue("season", "spring"); 
+       } else if(getCookie("season") == "spring") {
+        setCookieValue("season", "summer");
+       } else if(getCookie("season") == "summer") {
+        setCookieValue("season", "fall");
+       }
+       getElementById('season').href='/'+getCookie("season")+'.css';
+       }
+    </script>
+    <div class="banner">
+      <p>Renata's Site</p>
+    </div>
+    <div class="not-banner">
+      <div class="content-box">
+        <h2>Who am I?</h2>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <!--<button class="winterButton" onclick="getElementById('season').href='/winter.css'">Winter!</button>-->
+    <!--<button class="springButton" onclick="getElementById('season').href='/spring.css'">Spring!</button>-->
+    <!--<button class="summerButton" onclick="getElementById('season').href='/summer.css'">Summer!</button>-->
+    <!--<button class="fallButton" onclick="getElementById('season').href='/fall.css'">Fall!</button>-->
+    <!--<button class="friendlyButton" onclick="getElementById('season').href='/friendly.css'">Basic</button>-->
+    <!--<button class="rainButton" onclick="getElementById('season').href='/rain.css'">Portland Fall :(</button>-->
+    <!--<button class="cylceSeason" onclick="cycleSeason()">cycle season</button>-->
+    </body>
+</html>

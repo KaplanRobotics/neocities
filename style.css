@@ -1,0 +1,72 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* <uniquifier>: Use a unique and descriptive class name
+  <weight>: Use a value from 300 to 900 */
+.figtree-<uniquifier> {
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+body {
+  background-color: white;
+  /*font-family: aileron, sans-serif;*/
+  /*font-style: normal;*/
+  /*font-weight: 100;*/
+  color: black;
+  font-family: Verdana;
+  background-repeat:repeat;
+  /*background-size:32px 36px;*/
+  background-size:auto;
+  image-rendering: pixelated;
+  padding-top:0;
+  margin-top:0;
+  margin:0;
+  padding:0;
+  /*backdrop-filter:blur(1px);*/
+}
+
+.banner {
+  background-color:rgba(255,255,255,0.3);
+  width:100%;
+  text-align:center;
+  position:sticky;
+  height:100px;
+  top:0;
+  backdrop-filter:blur(1px);
+  border-bottom-width:3px;
+  border-bottom-style:solid;
+  border-color: var(--border-color);
+  z-index: 999;
+}
+
+.content-box {
+  background-color:rgba(255,255,255,0.3);
+  margin-top: 100px;
+  width:40%;
+  height:600px;
+  text-align: left;
+  position:relative;
+  left:30%;
+  backdrop-filter:blur(2px);
+  border-width: 3px;
+  border-style:solid;
+}
+
+.content-box>h2 {
+  text-align:center; 
+}
+
+.not-banner {
+  margin:8px;
+}
+
+.banner > p {
+ padding-top:30px;
+ margin:0;
+ font-size:xx-large;
+}
