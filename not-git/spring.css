@@ -5,6 +5,7 @@
 :root {
   --border-color: rgb(0, 126, 10);
   --dark-border-color: rgb(7, 43, 0);
+  --darkish-border-color: rgb(0, 107, 9);
 }
 
 
@@ -12,6 +13,13 @@ body {
   background-image:url(backgrounds/spring/springbackground2x.gif);
 }
 
+.no-visit:visited {
+  color: var(--dark-border-color);
+}
+
+.no-visit:hover {
+  color:rgb(105, 233, 0)
+}
 
 a:link {
   color: var(--dark-border-color)
@@ -22,7 +30,7 @@ a:hover {
 }
 
 a:visited {
-  color:rgb(163, 161, 11)
+  color:rgb(104, 102, 6)
 }
 
 .banner {
@@ -32,6 +40,10 @@ a:visited {
 
 .content-box {
   border-color: var(--border-color); 
+}
+
+.content-box:hover {
+  border-color: var(--dark-border-color);
 }
 
 .springButton {
