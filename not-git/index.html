@@ -27,38 +27,6 @@
         // }
       }
     </script>
-    <script>
-      function randomSeason() {
-      var random_id = Math.floor((Math.random()*4));
-      if(random_id == 0) {
-       document.getElementById('season').href='/spring.css'; 
-      } else if(random_id == 1) {
-       document.getElementById('season').href='/winter.css'; 
-      } else if(random_id == 2) {
-       document.getElementById('season').href='/summer.css'; 
-      } else if(random_id == 3) {
-       document.getElementById('season').href='/fall.css'; 
-      }
-    }
-    </script>
-    <script>
-      function cycleSeason() {
-       if(getCookie("season") == "") {
-         setCookieValue("season", "basic");
-       } else if(getCookie("season") == "basic") {
-        setCookieValue("season", "spring"); 
-       } else if(getCookie("season") == "fall") {
-        setCookieValue("season", "winter"); 
-       } else if(getCookie("season") == "winter") {
-        setCookieValue("season", "spring"); 
-       } else if(getCookie("season") == "spring") {
-        setCookieValue("season", "summer");
-       } else if(getCookie("season") == "summer") {
-        setCookieValue("season", "fall");
-       }
-       getElementById('season').href='/'+getCookie("season")+'.css';
-       }
-    </script>
     <div class="banner">
       <h1>&hearts; Renata's Site &hearts;</h1>
       <p>Homepage</p>

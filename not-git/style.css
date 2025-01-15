@@ -2,7 +2,11 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+html {
+  height:100%;
+}
 body {
+  height:100%;
   background-color: white;
   /*font-family: aileron, sans-serif;*/
   /*font-style: normal;*/
@@ -36,11 +40,14 @@ body {
 
 .pdf-box-container {
   position:relative;
-  height:100%;
+  height:80%;
 }
-.pdf-box-container > div {
-  height:100%;
- position:relative;
+.pdf-box-container > .content-box {
+  min-height:100%;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 .content-box {
@@ -76,14 +83,28 @@ body {
 
 .pic-bullet {
   display:flex;
+  flex-wrap:wrap;
+  column-gap:20px;
   margin-left:10px;
+  margin-right:10px;
   margin-bottom:10px;
   text-align:left;
 }
 
+.pic-bullet>ul {
+  max-width:370px;
+  padding-left:20px;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+
 #renata-photo {
   content:url(/pictures/me.jpg);
+  width:100%;
   max-width:300px;
+  max-height:300px;
+  height:auto;
+  
 }
 
 #renata-photo:hover {
@@ -108,10 +129,14 @@ body {
 }
 
 .pdf {
+  /* align-items:stretch; */
   position:relative;
+  display:flex;
   width:90%;
-  bottom:5%;
-  height:500px;
-  max-height:800px;
-  min-height:300px;
+  /* height:100%; */
+  max-height:550px;
+  /* min-height:300px; */
+  flex-basis:300px;
+  flex-grow: 3;
+  margin-bottom:10px;
 }
