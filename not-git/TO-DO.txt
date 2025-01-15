@@ -1,0 +1,5 @@
+TODO
+- Flesh out content boxes on project page
+- Design project page template with flex grid
+- Create pages for each project
+- Make projects page flex boxes look and function nicer, design with mobile in mind
