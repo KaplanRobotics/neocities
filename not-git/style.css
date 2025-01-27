@@ -76,8 +76,13 @@ body {
   font-size:large;
 }
 
-.content-grid-item > h3, h2{
+.content-grid-item > h2{
   margin-top:10px;
+  margin-bottom:3px;
+}
+
+.content-grid-item > h3{
+  margin-top:4px;
   margin-bottom:3px;
 }
 
