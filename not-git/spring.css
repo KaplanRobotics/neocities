@@ -46,6 +46,22 @@ a:visited {
   border-color: var(--dark-border-color);
 }
 
+.content-grid-item {
+  border-color: var(--border-color);
+}
+
+.content-grid-item:hover {
+  border-color: var(--dark-border-color);
+}
+
+.pdf-box-container > div {
+  border-color: var(--border-color);
+}
+
+.pdf-box-container > div:hover {
+  border-color: var(--dark-border-color);
+}
+
 .springButton {
  font-weight:bolder;
 }
