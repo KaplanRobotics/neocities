@@ -149,6 +149,12 @@ body {
   font-size:large;
 }
 
+.text-block {
+  text-align:left;
+  margin-left:10%;
+  margin-right:10%;
+}
+
 .content-box:hover {
   backdrop-filter:blur(2px);
 }
@@ -178,13 +184,15 @@ body {
   margin-bottom:5px;
 }
 
-#renata-photo {
-  content:url(/pictures/me.jpg);
+.pic-bullet>img {
   width:100%;
   max-width:300px;
   max-height:300px;
   height:auto;
-  
+}
+
+#renata-photo {
+  content:url(/pictures/me.jpg);
 }
 
 #renata-photo:hover {
