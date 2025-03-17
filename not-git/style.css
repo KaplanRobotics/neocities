@@ -38,29 +38,20 @@ body {
   /* transition:0.3s; */
 }
 
-.pdf-box-container {
-  padding-bottom:20px;
-}
-
-.pdf-box-container > .content-box {
-  max-width:750px !important;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  /* margin-bottom:20px; */
-  /* padding-bottom:20px; */
-}
-
-
 .content-grid-container {
   margin-top:min(50px,8%);
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  column-gap:5px;
+  column-gap:5px;   
   row-gap:20px;
   justify-content:space-evenly;
   align-items:stretch;
+}
+
+.content-grid-container:has(> .content-grid-container) {
+  justify-content:center !important;
+  margin-top:0 !important;
 }
 
 .content-grid-container > .content-box {
@@ -73,17 +64,21 @@ body {
   align-items:center;
 }
 
-.content-grid-container > .content-box > h2{
+.content-grid-container > .content-box > .pdf {
+  aspect-ratio:auto !important;
+}
+
+.content-grid-container > .content-box > h2 {
   margin-top:10px;
   margin-bottom:3px;
 }
 
-.content-grid-container > .content-box > h3{
+.content-grid-container > .content-box > h3 {
   margin-top:4px;
   margin-bottom:3px;
 }
 
-.content-grid-container > .content-box > img{
+.content-grid-container > .content-box > img{ 
   aspect-ratio:10 / 6;
   height:90%;
   width:90%;
@@ -168,12 +163,6 @@ body {
 #renata-photo:hover {
   content:url(/pictures/renata_spring.gif);
 }
-/* 
-.banner > p {
- padding-top:30px;
- margin:0;
- font-size:xx-large;
-} */
 
 .banner>h1 {
   margin:0;
@@ -189,7 +178,7 @@ body {
 .pdf {
   /* align-items:stretch; */
   position:relative;
-  display:flex;
+  /* display:flex; */
   width:90%;
   /* height:100%; */
   /* max-height:550px; */
