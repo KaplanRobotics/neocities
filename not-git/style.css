@@ -43,6 +43,7 @@ body {
 }
 
 .pdf-box-container > .content-box {
+  max-width:750px !important;
   display:flex;
   flex-direction:column;
   align-items:center;
