@@ -74,7 +74,7 @@ body {
 }
 
 .content-grid-container > .content-box {
-  max-width:650px;
+  max-width:min(650px, 90vw);
   margin-top:5px !important;
   margin: 0 0 !important;
   display:flex;
@@ -114,7 +114,7 @@ body {
 
 .content-grid-container > .content-box:hover {
   backdrop-filter:blur(2px);
-}
+}   
 
 .content-box {
   display:block;
@@ -160,6 +160,32 @@ body {
   display:grid;
   justify-content:space-evenly;
   grid-column:1;
+}
+
+.scroll-container {
+  flex-shrink:0;
+  display:block;
+  width:90%;
+  overflow-x:scroll;
+  margin-bottom:8px;
+  display:block;
+  height:100px;
+
+}
+.thumbnail-container {
+  margin-top:0;
+  margin-bottom:0;
+  width:max-content;
+  height:90%;
+  /* overflow:scroll; */
+  /* overflow-x:scroll; */
+  /* overflow-y:hidden; */
+}
+
+.thumbnail-container > img {
+  display:relative;
+  /* aspect-ratio:1/1 !important; */
+  height:100%;
 }
 
 .pic-bullet {

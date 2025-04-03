@@ -11,8 +11,9 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
           <title>Renata's Site</title>
-          
+          <script type="text/javascript" src="scripts.js"></script>
           <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+          <link href="rbe1001.css" rel="stylesheet" type="text/css" media="all">
           <link id="season" href="/spring.css" rel="stylesheet" type="text/css" media="all">
           <link rel="icon" type="image/png" href="favicon.png">
     </head>
@@ -40,7 +41,21 @@
                 </div>
                 <div class="content-box">
                     <h2>Image Gallery</h2>
-                    <img src="../pictures/1001Robot.jpg">
+                    <img class="rbe1001robot" id="central-image"></img>
+                    <div class="scroll-container">
+                    <div class="thumbnail-container">
+                        <img class="rbe1001robot" onclick="changeCentralImage('rbe1001robot')"></img>
+                        <img class="rbe1001claw" onclick="changeCentralImage('rbe1001claw')"></img>
+                        <img class="rbe1001box" onclick="changeCentralImage('rbe1001box')"></img>
+                        <img class="rbe1001drive" onclick="changeCentralImage('rbe1001drive')"></img>
+                        <img class="rbe1001rd4b" onclick="changeCentralImage('rbe1001rd4b')"></img>
+                        <img class="rbe1001robot" onclick="changeCentralImage('rbe1001robot')"></img>
+                        <img class="rbe1001claw" onclick="changeCentralImage('rbe1001claw')"></img>
+                        <img class="rbe1001box" onclick="changeCentralImage('rbe1001box')"></img>
+                        <img class="rbe1001drive" onclick="changeCentralImage('rbe1001drive')"></img>
+                        <img class="rbe1001rd4b" onclick="changeCentralImage('rbe1001rd4b')"></img>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
