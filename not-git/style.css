@@ -112,6 +112,14 @@ body {
   margin-bottom:10px;
 }
 
+.thumbnail-container > img {
+  filter: brightness(70%);
+}
+.thumbnail-container > img:hover{ 
+  cursor:pointer;
+  filter: brightness(100%) !important;
+}
+
 .content-grid-container > .content-box:hover {
   backdrop-filter:blur(2px);
 }   
